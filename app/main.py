@@ -20,9 +20,9 @@ def get_weather() -> None:
         current_info = response["current"]
         print("Performing request to Weather API for city Paris...")
         print(
-            f"Paris/France {location_info["localtime"]} "
-            f"Weather: {current_info["temp_c"]} Celsius, "
-            f"{current_info["condition"]["text"]}"
+            f"Paris/France {location_info['localtime']} "
+            f"Weather: {current_info['temp_c']} Celsius, "
+            f"{current_info['condition']['text']}"
         )
     except KeyError:
         print("Check your API_KEY")
