@@ -7,6 +7,7 @@ API_URL = "https://api.weatherapi.com/v1/current.json"
 CITY_NAME = "Paris"
 
 def get_weather() -> None:
+
     try:
         api_key = os.environ["API_KEY"]
         if not api_key:
@@ -24,7 +25,6 @@ def get_weather() -> None:
         )
     except KeyError:
         print("Check your API_KEY")
-
 
 
 if __name__ == "__main__":
